@@ -10,8 +10,7 @@
             <td>Ingredient Name</td>
             <td>Ingredient Type</td>
             <td>Storage</td>
-            <td>Opened?</td>
-            <td>Cooked?</td>
+            <td>Usage Status</td>
             <td>Time Left</td>
             <td>Purchased</td>
             </thead>
@@ -29,18 +28,16 @@
                   <td>
                     <% if ingredient.expiration_date.is_opened %>
                       <span class="bg-warning">Opened</span>
-                    <% else %>
+                    <% elsif ingredient.expiration_date.is_opened == false %>
                       <span class="bg-info">Sealed</span>
                     <% end %>
-                  </td>
-                  <td>
                     <% if ingredient.expiration_date.is_cooked %>
                       <span class="bg-success">Cooked</span>
                     <% else %>
                       <span class="bg-danger">Uncooked</span>
                     <% end %>
                   </td>
-                  <td><%= TimeDifference.between(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration).in_days %> days</td>
+                  <td><%= distance_of_time_in_words(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration.days) %></td>
                   <td><%= time_ago_in_words(ingredient.purchase_date) %> ago</td>
                 </tr>
             <% end %>
