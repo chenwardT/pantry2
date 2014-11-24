@@ -1,3 +1,50 @@
 <h3>User</h3>
-<p>Name: <%= @user.name if @user.name %></p>
 <p>Email: <%= @user.email if @user.email %></p>
+
+<div>
+    <% if @user.ingredients.any? %>
+        <h3>Ingredients (<%= @user.ingredients.count %>)</h3>
+        <ul class="ingredients">
+          <table class="table">
+            <thead>
+            <td>Ingredient Name</td>
+            <td>Ingredient Type</td>
+            <td>Storage</td>
+            <td>Opened?</td>
+            <td>Cooked?</td>
+            <td>Time Left</td>
+            <td>Purchased</td>
+            </thead>
+            <% @user.ingredients.each do |ingredient| %>
+                <tr>
+                  <td><%= ingredient.name %></td>
+                  <td><%= ingredient.expiration_date.name %></td>
+                  <% if ingredient.expiration_date.in_fridge %>
+                    <td>Fridge</td>
+                  <% elsif ingredient.expiration_date.in_freezer %>
+                    <td>Freezer</td>
+                  <% else %>
+                    <td>Pantry</td>
+                  <% end %>
+                  <td>
+                    <% if ingredient.expiration_date.is_opened %>
+                      <span class="bg-warning">Opened</span>
+                    <% else %>
+                      <span class="bg-info">Sealed</span>
+                    <% end %>
+                  </td>
+                  <td>
+                    <% if ingredient.expiration_date.is_cooked %>
+                      <span class="bg-success">Cooked</span>
+                    <% else %>
+                      <span class="bg-danger">Uncooked</span>
+                    <% end %>
+                  </td>
+                  <td><%= TimeDifference.between(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration).in_days %> days</td>
+                  <td><%= time_ago_in_words(ingredient.purchase_date) %> ago</td>
+                </tr>
+            <% end %>
+            </table>
+        </ul>
+    <% end %>
+</div>

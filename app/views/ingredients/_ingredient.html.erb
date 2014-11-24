@@ -1,0 +1,7 @@
+<!-- UNUSED, see users/show.html -->
+<li id="ingredient-<%= ingredient.id %>">
+  <span class="name"><%= ingredient.name %></span>
+  <span class="expiration_date_name">Type: <%= ingredient.expiration_date.name %></span>
+  <span class="expiration_date_duration">Time left: <%= ingredient.expiration_date.duration.days - (Time.now - ingredient.purchase_date) %></span>
+</li>
+

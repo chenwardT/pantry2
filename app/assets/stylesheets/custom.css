@@ -204,3 +204,9 @@ span {
     width: auto;
     margin-left: 0;
 }
+
+/* ingredients */
+
+.ingredient-table {
+    border: 1px solid black;
+}

@@ -29,6 +29,8 @@ gem 'nokogiri'
 gem 'rails4-autocomplete'
 # User Auth
 gem 'devise'
+# DateTime comparison
+gem 'time_difference'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
