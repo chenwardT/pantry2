@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  is_opened: false
+  is_cooked: false
+  in_fridge: false
+  in_freezer: false
+  in_pantry: false
+  duration: 1
+
+two:
+  name: MyString
+  is_opened: false
+  is_cooked: false
+  in_fridge: false
+  in_freezer: false
+  in_pantry: false
+  duration: 1

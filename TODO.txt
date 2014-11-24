@@ -1,0 +1,1 @@
+Customize Devise layout for User views, e.g. make "name" field editable via form.
