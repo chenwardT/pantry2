@@ -10,7 +10,7 @@
             <td>Ingredient Name</td>
             <td>Ingredient Type</td>
             <td>Storage</td>
-            <td>Usage Status</td>
+            <td>Opened or Cooked?</td>
             <td>Expiration Date</td>
             <td>Purchased</td>
             </thead>
@@ -41,7 +41,7 @@
                     <% if ingredient.expired? %>
                         <span class="bg-danger">Expired</span>
                     <% else %>
-                        <%= distance_of_time_in_words(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration.days) %> (<%= ingredient.purchase_date + ingredient.expiration_date.duration.days %>)</td>
+                        <%= distance_of_time_in_words(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration.days) %> (<%= ingredient.expires_on %>)</td>
                     <% end %>
                   <td><%= time_ago_in_words(ingredient.purchase_date) %> ago</td>
                 </tr>

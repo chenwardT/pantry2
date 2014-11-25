@@ -8,4 +8,12 @@ class Ingredient < ActiveRecord::Base
   def expired?
     Time.now > (purchase_date + expiration_date.duration.days)
   end
+
+  def expires_on
+    purchase_date + expiration_date.duration.days
+  end
+
+  def time_until_expiration_in_words
+    distance_of_time_in_words(purchase_date, Time.now - expiration_date.duration.days)
+  end
 end
