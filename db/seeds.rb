@@ -29,3 +29,19 @@ ExpirationDate.create([
                      {name: 'Butter', is_opened: false, in_fridge: true, duration: 1.month / 1.day},
                      {name: 'Butter', is_opened: false, in_freezer: true, duration: 9.months / 1.day},
                  ])
+
+20.times do |n|
+  email = "example-#{n+1}@foodies.net"
+  password = "password"
+  User.create!(email: email,
+    password: password,
+    password_confirmation: password)
+end
+
+User.all.each do |user|
+  (rand(8) + 1).times do
+    user.ingredients.create!(name: Faker::Lorem.words(3).to_s,
+                           purchase_date: Faker::Time.between(2.months.ago, Time.now, :all),
+                           expiration_date_id: rand(ExpirationDate.all.count))
+  end
+end

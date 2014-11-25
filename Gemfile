@@ -29,6 +29,7 @@ gem 'nokogiri'
 gem 'rails4-autocomplete'
 # User Auth
 gem 'devise'
+gem 'faker'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record

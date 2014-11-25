@@ -11,7 +11,7 @@
             <td>Ingredient Type</td>
             <td>Storage</td>
             <td>Usage Status</td>
-            <td>Time Left</td>
+            <td>Expiration Date</td>
             <td>Purchased</td>
             </thead>
             <% @user.ingredients.each do |ingredient| %>
@@ -37,7 +37,12 @@
                       <span class="bg-danger">Uncooked</span>
                     <% end %>
                   </td>
-                  <td><%= distance_of_time_in_words(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration.days) %></td>
+                  <td>
+                    <% if ingredient.expired? %>
+                        <span class="bg-danger">Expired</span>
+                    <% else %>
+                        <%= distance_of_time_in_words(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration.days) %> (<%= ingredient.purchase_date + ingredient.expiration_date.duration.days %>)</td>
+                    <% end %>
                   <td><%= time_ago_in_words(ingredient.purchase_date) %> ago</td>
                 </tr>
             <% end %>

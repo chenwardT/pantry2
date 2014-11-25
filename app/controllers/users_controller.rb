@@ -8,8 +8,10 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @ingredients = @user.ingredients
-    unless @user == current_user
-      redirect_to :back, alert: 'Access denied.'
-    end
+
+    # Uncomment to only give access to logged in user's page
+    # unless @user == current_user
+    #   redirect_to :back, alert: 'Access denied.'
+    # end
   end
 end

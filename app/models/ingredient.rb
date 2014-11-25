@@ -4,4 +4,8 @@ class Ingredient < ActiveRecord::Base
   default_scope -> { order(created_at: :asc) }
   validates :user_id, presence: true
   validates :expiration_date_id, presence: true
+
+  def expired?
+    Time.now > (purchase_date + expiration_date.duration.days)
+  end
 end
