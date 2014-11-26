@@ -27,3 +27,6 @@
 --Form should allow user to pick ingredient type (e.g. Beef) and how it's stored separately.
 --Controller can then coerce this input into the right ExpirationDate record?
 --This might mean a less-flat schema for ExpirationDate data.
+
+-User's ingredients listing should have buttons for edit/delete per-ingredient
+--Also consider checkboxes for each entry, with a button to delete selected entries
