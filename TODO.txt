@@ -22,3 +22,8 @@
 --Normalization
 
 -How to manage displaying all times (including select tag options!) in user.timezone, but saving all as UTC?
+
+-Re-think ingredient input.
+--Form should allow user to pick ingredient type (e.g. Beef) and how it's stored separately.
+--Controller can then coerce this input into the right ExpirationDate record?
+--This might mean a less-flat schema for ExpirationDate data.

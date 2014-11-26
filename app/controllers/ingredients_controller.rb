@@ -1,16 +1,15 @@
 class IngredientsController < ApplicationController
   before_action :authenticate_user!
+  around_filter :set_time_zone
 
   def create
     @ingredient = current_user.ingredients.build(ingredient_params)
+
     if @ingredient.save
       flash[:success] = "Ingredient added!"
       redirect_to user_path(current_user)
     else
-      # flash[:alert] = "Error adding ingredient - did you enter each field?"
-      # redirect_to user_path(current_user)
       @user = current_user
-      #@ingredients = @user.ingredients
       render 'users/show'
     end
   end
@@ -22,5 +21,13 @@ class IngredientsController < ApplicationController
 
     def ingredient_params
       params.require(:ingredient).permit([:name, :expiration_date_id, :purchase_date])
+    end
+
+    def set_time_zone
+      old_tz = Time.zone
+      Time.zone = current_user.timezone unless current_user.nil?
+      yield
+    ensure
+      Time.zone = old_tz
     end
 end
