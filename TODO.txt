@@ -1,1 +1,8 @@
-Customize Devise layout for User views, e.g. make "name" field editable via form.
+-Customize Devise layout for User views, e.g. make "name" field editable via form.
+
+-Regularly check for ingredients that are nearing expiration.
+--Dynamic period of time to warn before expiration depending on how many ingredients are going bad.
+--e.g. if you have 10 things going bad tomorrow, it's probably too late to cook them all, so warn earlier if more stuff.
+--Use email and flashes for this?
+---Flashes should not go away unless clicked on.
+

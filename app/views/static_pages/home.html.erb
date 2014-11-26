@@ -6,7 +6,7 @@
   </h2>
 
   <% if user_signed_in? %>
-      <%= link_to "Go to your pantry!", "#", class: "btn btn-lg btn-primary" %>
+      <%= link_to "Go to your pantry!", user_path(current_user), class: "btn btn-lg btn-primary" %>
   <% else %>
       <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
   <% end %>

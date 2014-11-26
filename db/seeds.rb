@@ -40,7 +40,7 @@ end
 
 User.all.each do |user|
   (rand(8) + 1).times do
-    user.ingredients.create!(name: Faker::Lorem.words(3).to_s,
+    user.ingredients.create!(name: Faker::Lorem.words(3).join(' ').to_s,
                            purchase_date: Faker::Time.between(2.months.ago, Time.now, :all),
                            expiration_date_id: rand(ExpirationDate.all.count))
   end
