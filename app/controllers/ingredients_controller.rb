@@ -7,7 +7,11 @@ class IngredientsController < ApplicationController
       flash[:success] = "Ingredient added!"
       redirect_to user_path(current_user)
     else
-      render root_path
+      # flash[:alert] = "Error adding ingredient - did you enter each field?"
+      # redirect_to user_path(current_user)
+      @user = current_user
+      #@ingredients = @user.ingredients
+      render 'users/show'
     end
   end
 

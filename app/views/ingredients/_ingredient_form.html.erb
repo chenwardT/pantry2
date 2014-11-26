@@ -1,13 +1,16 @@
 <%= form_for(@ingredient) do |f| %>
     <%= render 'shared/error_messages', object: f.object %>
     <div class="field">
-      <%= f.text_field :name, placeholder: 'Ingredient name...' %>
+      <%= f.label :ingredient_name %>
+      <%= f.text_field :name, placeholder: 'Enter a name for this ingredient (ex. leftover porkchops)' %>
     </div>
     <div class="field">
+      <%= f.label :ingredient_type %>
       <%= f.select :expiration_date_id, [['Test 1', 1], ['Test 2', 2], ['Test 3', 3]]%>
     </div>
     <div class="field">
-      <%= f.datetime_select :purchase_date %>
+      <%= f.label :purchase_date %>
+      <%= f.datetime_select :purchase_date, ampm: true, default: Time.now %>
     </div>
-    <%= f.submit 'Add', class: 'btn btn-primary' %>
+    <%= f.submit 'Add Ingredient', class: 'btn btn-primary' %>
 <% end %>

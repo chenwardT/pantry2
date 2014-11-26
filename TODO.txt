@@ -6,3 +6,19 @@
 --Use email and flashes for this?
 ---Flashes should not go away unless clicked on.
 
+-Hour/minute of the day shouldn't be displayed for expiration dates.
+--So should we round to next day, or nearest day?
+--What margin to use for rounding?
+
+-Try rails-bootstrap-forms instead of screwing around w/CSS
+--Especially relevant to datetime_select form elements each taking up a row (instead of being inline)
+
+-Dumb down views; move code into model/helper methods.
+
+-Validations
+
+-DB
+--Indices
+--Normalization
+
+-How to manage displaying all times (including select tag options!) in user.timezone, but saving all as UTC?

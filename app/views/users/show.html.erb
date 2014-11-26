@@ -11,10 +11,13 @@
             <td>Ingredient Type</td>
             <td>Storage</td>
             <td>Opened or Cooked?</td>
-            <td>Expiration Date</td>
+            <td>Expires</td>
             <td>Purchased</td>
+            <td>Entry Created</td>
+            <td>Entry Modified</td>
             </thead>
             <% @user.ingredients.each do |ingredient| %>
+                <% if ingredient.valid? %>
                 <tr>
                   <td><%= ingredient.name %></td>
                   <td><%= ingredient.expiration_date.name %></td>
@@ -41,10 +44,21 @@
                     <% if ingredient.expired? %>
                         <span class="bg-danger">Expired</span>
                     <% else %>
-                        <%= distance_of_time_in_words(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration.days) %> (<%= ingredient.expires_on %>)</td>
+                        <%= distance_of_time_in_words(ingredient.purchase_date, Time.now - ingredient.expiration_date.duration.days) %> (<%= format_datetime(ingredient.expires_on.in_time_zone(current_user.timezone)) %>)</td>
                     <% end %>
-                  <td><%= time_ago_in_words(ingredient.purchase_date) %> ago</td>
+                  <td><%= time_ago_in_words(ingredient.purchase_date.in_time_zone(current_user.timezone)) %> ago</td>
+                  <td>
+                    <% unless ingredient.created_at.blank? %>
+                        <%= format_datetime_precise ingredient.created_at %>
+                    <% end %>
+                  </td>
+                  <td>
+                    <% unless ingredient.updated_at.blank? %>
+                        <%= format_datetime_precise ingredient.updated_at %>
+                    <% end %>
+                  </td>
                 </tr>
+                <% end %>
             <% end %>
             </table>
         </ul>
