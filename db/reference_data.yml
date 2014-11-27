@@ -1,0 +1,826 @@
+---
+- name: Unbaked rolls and bread
+  fridge_duration: 4.days
+  freezer_duration: 1.month
+  comments: Longer storage inactivates yeast and weakens gluten.
+  category: Breads, pastries and cakes
+- name: Partially baked cinnamon rolls
+  fridge_duration: 2.weeks
+  freezer_duration: 2.months
+  comments: ''
+  category: Breads, pastries and cakes
+- name: Baked quick breads
+  fridge_duration: See comments
+  freezer_duration: 2.months
+  comments: Not necessary to refrigerate unless product cannot be used within 4-5
+    days or time recommended on package.
+  category: Breads, pastries and cakes
+- name: Baked muffins
+  fridge_duration: See comments
+  freezer_duration: 12.months
+  comments: Not necessary to refrigerate unless product cannot be used within 4-5
+    days or time recommended on package.
+  category: Breads, pastries and cakes
+- name: Baked breads (no preservatives)
+  fridge_duration: 3.weeks
+  freezer_duration: 3.months
+  comments: Store in refrigerator to inhibit mold growth.
+  category: Breads, pastries and cakes
+- name: Waffles
+  fridge_duration: 2.days
+  freezer_duration: 1.month
+  comments: ''
+  category: Breads, pastries and cakes
+- name: Unbaked fruit pies
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Breads, pastries and cakes
+- name: Baked fruit pies
+  fridge_duration: 3.days
+  freezer_duration: 8.months
+  comments: ''
+  category: Breads, pastries and cakes
+- name: Pumpkin or chiffon pies
+  fridge_duration: 3.days
+  freezer_duration: 2.months
+  comments: ''
+  category: Breads, pastries and cakes
+- name: Baked cookies
+  fridge_duration: 3.weeks
+  freezer_duration: 12.months
+  comments: ''
+  category: Breads, pastries and cakes
+- name: Cookie dough
+  fridge_duration: 4.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Breads, pastries and cakes
+- name: Frosted baked cakes
+  fridge_duration: See comments
+  freezer_duration: 1.month
+  comments: Not necessary to refrigerate unless product cannot be used within 4-5
+    days or time recommended on package.
+  category: Breads, pastries and cakes
+- name: Unfrosted baked cakes
+  fridge_duration: See comments
+  freezer_duration: 4.months
+  comments: Not necessary to refrigerate unless product cannot be used within 4-5
+    days or time recommended on package.
+  category: Breads, pastries and cakes
+- name: Angel cakes
+  fridge_duration: See comments
+  freezer_duration: 12.months
+  comments: Not necessary to refrigerate unless product cannot be used within 4-5
+    days or time recommended on package.
+  category: Breads, pastries and cakes
+- name: 'Flour: white or whole wheat'
+  fridge_duration: 8.months
+  freezer_duration: 12.months
+  comments: ''
+  category: Breads, pastries and cakes
+- name: Butter
+  fridge_duration: 3.months
+  freezer_duration: 12.months
+  comments: Freeze in original carton and overwrap with plastic freezer bag.
+  category: Dairy products
+- name: Buttermilk
+  fridge_duration: 2.weeks
+  freezer_duration: Not recommended
+  comments: Check date on carton. Will keep several days after date.
+  category: Dairy products
+- name: Cottage cheese
+  fridge_duration: 7.days
+  freezer_duration: 1.month
+  comments: Freezing changes texture of soft cheeses.
+  category: Dairy products
+- name: Ricotta cheese
+  fridge_duration: 7.days
+  freezer_duration: 1.month
+  comments: Freezing changes texture of soft cheeses.
+  category: Dairy products
+- name: Cream cheese
+  fridge_duration: 2.weeks
+  freezer_duration: 1.month
+  comments: Becomes crumbly when frozen; can be used in cooking when creaminess is
+    not important.
+  category: Dairy products
+- name: Natural aged cheese
+  fridge_duration: 3.months
+  freezer_duration: 8.months
+  comments: Natural and processed cheeses can be frozen. Defrost in refrigerator--cheese
+    will be less likely to crumble. Use soon after thawing.
+  category: Dairy products
+- name: Cheddar cheese
+  fridge_duration: 3.months
+  freezer_duration: 8.months
+  comments: Natural and processed cheeses can be frozen. Defrost in refrigerator--cheese
+    will be less likely to crumble. Use soon after thawing.
+  category: Dairy products
+- name: Swiss cheese
+  fridge_duration: 3.months
+  freezer_duration: 8.months
+  comments: Natural and processed cheeses can be frozen. Defrost in refrigerator--cheese
+    will be less likely to crumble. Use soon after thawing.
+  category: Dairy products
+- name: Gouda cheese
+  fridge_duration: 3.months
+  freezer_duration: 8.months
+  comments: Natural and processed cheeses can be frozen. Defrost in refrigerator--cheese
+    will be less likely to crumble. Use soon after thawing.
+  category: Dairy products
+- name: Mozzarella cheese
+  fridge_duration: 3.months
+  freezer_duration: 8.months
+  comments: Natural and processed cheeses can be frozen. Defrost in refrigerator--cheese
+    will be less likely to crumble. Use soon after thawing.
+  category: Dairy products
+- name: Cheese slices or opened packages
+  fridge_duration: 3.weeks
+  freezer_duration: 8.months
+  comments: ''
+  category: Dairy products
+- name: Parmesan
+  fridge_duration: 12.months
+  freezer_duration: 8.months
+  comments: ''
+  category: Dairy products
+- name: Romano, grated
+  fridge_duration: 12.months
+  freezer_duration: 8.months
+  comments: ''
+  category: Dairy products
+- name: Pasteurized processed cheese
+  fridge_duration: 4.weeks
+  freezer_duration: 8.months
+  comments: ''
+  category: Dairy products
+- name: Coffee whitener (liquid)
+  fridge_duration: 3.weeks
+  freezer_duration: See package
+  comments: ''
+  category: Dairy products
+- name: Cream, light
+  fridge_duration: 1.week
+  freezer_duration: 4.weeks
+  comments: ''
+  category: Dairy products
+- name: Half and half
+  fridge_duration: 1.week
+  freezer_duration: 4.weeks
+  comments: ''
+  category: Dairy products
+- name: Cheese - UHT processed-unopened
+  fridge_duration: 4.weeks
+  freezer_duration: 4.weeks
+  comments: ''
+  category: Dairy products
+- name: Cheese - UHT processed-opened
+  fridge_duration: 1.week
+  freezer_duration: 4.weeks
+  comments: ''
+  category: Dairy products
+- name: Cream - heavy or whipping
+  fridge_duration: 1.week
+  freezer_duration: Not recommended
+  comments: Whipping cream will not whip after thawing. Whipped cream may be frozen
+    and stored for 1-2 weeks.
+  category: Dairy products
+- name: Dip, sour cream or commercial
+  fridge_duration: 2.weeks
+  freezer_duration: Not recommended
+  comments: ''
+  category: Dairy products
+- name: Dip, homemade
+  fridge_duration: 4.days
+  freezer_duration: Not recommended
+  comments: ''
+  category: Dairy products
+- name: Margarine
+  fridge_duration: 3.months
+  freezer_duration: 12.months
+  comments: Leave in original foil and carton overwrap in plastic bag for freezer
+    storage.
+  category: Dairy products
+- name: Milk, evaporated (opened)
+  fridge_duration: 5.days
+  freezer_duration: 3.months
+  comments: Freezing affects flavor and/or appearance; use for cooking.
+  category: Dairy products
+- name: Milk, fluid whole or low-fat
+  fridge_duration: 1.week
+  freezer_duration: 3.months
+  comments: Same as for evaporated.
+  category: Dairy products
+- name: Milk, reconstituted nonfat dry
+  fridge_duration: 1.week
+  freezer_duration: 3.months
+  comments: ''
+  category: Dairy products
+- name: Milk, sweetened or condensed (opened)
+  fridge_duration: 5.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Dairy products
+- name: Sour cream
+  fridge_duration: 3.weeks
+  freezer_duration: Not recommended
+  comments: Sour cream will separate if frozen.
+  category: Dairy products
+- name: Whipped topping in aerosol can
+  fridge_duration: 3.weeks
+  freezer_duration: Not recommended
+  comments: ''
+  category: Dairy products
+- name: Whipped topping prepared from mix
+  fridge_duration: 3.days
+  freezer_duration: Not recommended
+  comments: ''
+  category: Dairy products
+- name: Whipped topping in frozen carton (thawed)
+  fridge_duration: 2.weeks
+  freezer_duration: Not recommended
+  comments: ''
+  category: Dairy products
+- name: Yogurt
+  fridge_duration: 1.month
+  freezer_duration: Not recommended
+  comments: Yogurt will separate if frozen.
+  category: Dairy products
+- name: Eggs, fresh in shell
+  fridge_duration: 3.weeks
+  freezer_duration: Not recommended
+  comments: ''
+  category: Eggs and egg products
+- name: Eggs, fresh yolks or whites
+  fridge_duration: 4.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Eggs and egg products
+- name: Eggs, hard-cooked in shell
+  fridge_duration: 1.week
+  freezer_duration: Not recommended
+  comments: ''
+  category: Eggs and egg products
+- name: Eggs, liquid pasteurized or substitutes (opened)
+  fridge_duration: 5.days
+  freezer_duration: 1 year
+  comments: ''
+  category: Eggs and egg products
+- name: Egg-containing products; custards, sauces, puddings, cakes
+  fridge_duration: 2.days
+  freezer_duration: Not recommended
+  comments: ''
+  category: Eggs and egg products
+- name: Canned puddings (opened)
+  fridge_duration: 2.days
+  freezer_duration: Not recommended
+  comments: ''
+  category: Eggs and egg products
+- name: Apples
+  fridge_duration: 3.weeks
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Apricots
+  fridge_duration: 1.week
+  freezer_duration: 12.month
+  comments: ''
+  category: Fruits
+- name: Cranberries
+  fridge_duration: 1.week
+  freezer_duration: 12.month
+  comments: ''
+  category: Fruits
+- name: Avocados
+  fridge_duration: 5.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Fruits
+- name: Bananas, unpeeled
+  fridge_duration: 2.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Fruits
+- name: Berries
+  fridge_duration: 2.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Cherries
+  fridge_duration: 2.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Grapes
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Peaches
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Pears
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Plums
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Rhubarb
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Canned fruits, opened
+  fridge_duration: 5.days
+  freezer_duration: 2.months
+  comments: ''
+  category: Fruits
+- name: Citrus fruits
+  fridge_duration: 3.weeks
+  freezer_duration: 6.months
+  comments: Wrap cut surfaces to prevent loss of Vitamin C.
+  category: Fruits
+- name: Dried fruit, uncooked
+  fridge_duration: 6.months
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Dried fruit, cooked
+  fridge_duration: 5.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Fruits
+- name: 'Juices: canned, bottled, frozen concentrate'
+  fridge_duration: 1.week
+  freezer_duration: 12.months
+  comments: ''
+  category: Fruits
+- name: Melons
+  fridge_duration: 1.week
+  freezer_duration: 12.months
+  comments: Wrap cut surfaces to prevent loss of Vitamin C and spread of odors.
+  category: Fruits
+- name: 'Roasts: beef (fresh)'
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: Meats may be left in the supermarket packaging for refrigerator storage
+    or for very brief freezer storage. For frozen storage beyond two weeks
+  category: Meats
+- name: 'Roasts: veal or pork (fresh)'
+  fridge_duration: 5.days
+  freezer_duration: 8.months
+  comments: ''
+  category: Meats
+- name: 'Roasts: lamb (fresh)'
+  fridge_duration: 5.days
+  freezer_duration: 9.months
+  comments: ''
+  category: Meats
+- name: Steaks, beef (fresh)
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Meats
+- name: 'Chops: pork, veal (fresh)'
+  fridge_duration: 5.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Meats
+- name: 'Chops: lamb (fresh)'
+  fridge_duration: 5.days
+  freezer_duration: 9.months
+  comments: ''
+  category: Meats
+- name: Ground beef (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Stew meat (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Ground pork (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Turkey (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Veal (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Lamb (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: 'Sausage: pork, beef, turkey (fresh)'
+  fridge_duration: 2.days
+  freezer_duration: 2.months
+  comments: ''
+  category: Meats
+- name: Bratwurst (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Meats
+- name: Bratwurst, precooked
+  fridge_duration: 7.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Meats
+- name: Tongue (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Liver (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Brains (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Heart (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Kidneys (fresh)
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Meats
+- name: Canned meat, opened (cooked)
+  fridge_duration: 3.days
+  freezer_duration: Not recommended
+  comments: ''
+  category: Meats
+- name: Cooked meat and meat dishes
+  fridge_duration: 4.days
+  freezer_duration: 3.months
+  comments: 'Quickly refrigerate all cooked meats and leftovers, use as soon as possible.
+    Cut large roasts into halves to cool in refrigerator.                                '
+  category: Meats
+- name: Gravy and meat broth (cooked)
+  fridge_duration: 2.days
+  freezer_duration: 3.months
+  comments: Fats tend to separate in homemade gravies, stews and sauces, but usually
+    recombine when heated. Cool leftover gravy and broth quickly in shallow containers
+    in the refrigerator.
+  category: Meats
+- name: Bacon
+  fridge_duration: 7.days
+  freezer_duration: 1.month
+  comments: Keep packaged meats in original package. For best quality use within one
+    week of sell by date.
+  category: Meats
+- name: Corned beef
+  fridge_duration: 7.days
+  freezer_duration: 1.month
+  comments: ''
+  category: Meats
+- name: Frankfurters
+  fridge_duration: 7.days
+  freezer_duration: 2.months
+  comments: Frozen, cured meats lose quality rapidly; use as soon as possible.
+  category: Meats
+- name: 'Ham: whole'
+  fridge_duration: 7.days
+  freezer_duration: 2.months
+  comments: ''
+  category: Meats
+- name: 'Ham: half'
+  fridge_duration: 5.days
+  freezer_duration: 2.months
+  comments: Small pieces of canned ham (opened) may be frozen for 4-6 weeks.
+  category: Meats
+- name: 'Ham: canned (unopened)'
+  fridge_duration: 12.months
+  freezer_duration: Not recommended
+  comments: ''
+  category: Meats
+- name: Luncheon meats (processed and cured)
+  fridge_duration: 5.days
+  freezer_duration: 2.months
+  comments: ''
+  category: Meats
+- name: Sausage, smoked (processed and cured)
+  fridge_duration: 7.days
+  freezer_duration: 2.months
+  comments: ''
+  category: Meats
+- name: Dry and semi-dry sausage (processed and cured)
+  fridge_duration: 3.weeks
+  freezer_duration: 2.months
+  comments: ''
+  category: Meats
+- name: Fresh Chicken and turkey (whole)
+  fridge_duration: 2.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Poultry
+- name: Fresh Chicken (pieces)
+  fridge_duration: 2.days
+  freezer_duration: 9.months
+  comments: ''
+  category: Poultry
+- name: Fresh Turkey (pieces)
+  fridge_duration: 2.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Poultry
+- name: Fresh Duck and goose (whole)
+  fridge_duration: 2.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Poultry
+- name: Fresh Giblets
+  fridge_duration: 2.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Poultry
+- name: Cooked canned poultry, opened
+  fridge_duration: 1.day
+  freezer_duration: Not recommended
+  comments: Quick-cool meat and broth separately in shallow containers. Add ice cubes
+    to concentrated broth to speed cooling and to aid fat removal.
+  category: Poultry
+- name: Cooked poultry dishes
+  fridge_duration: 4.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Poultry
+- name: Cooked chicken pieces (covered with broth)
+  fridge_duration: 2.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Poultry
+- name: Cooked chicken pieces (not in broth)
+  fridge_duration: 4.days
+  freezer_duration: 1.month
+  comments: ''
+  category: Poultry
+- name: Fried chicken
+  fridge_duration: 4.days
+  freezer_duration: 4.months
+  comments: ''
+  category: Poultry
+- name: Venison
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Wild game
+- name: Rabbit, squirrel
+  fridge_duration: 2.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Wild game
+- name: Wild duck, pheasant, goose
+  fridge_duration: 2.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Wild game
+- name: Canned fish, seafood, opened
+  fridge_duration: 1.day
+  freezer_duration: Not recommended
+  comments: ''
+  category: Seafood
+- name: Clams
+  fridge_duration: 9.days
+  freezer_duration: 4.months
+  comments: Store in coldest part of refrigerator. Do not use if liquid is frothy.
+  category: Seafood
+- name: Oysters (shucked)
+  fridge_duration: 9.days
+  freezer_duration: 4.months
+  comments: Store in coldest part of refrigerator. Do not use if liquid is frothy.
+  category: Seafood
+- name: Scallops
+  fridge_duration: 9.days
+  freezer_duration: 4.months
+  comments: Store in coldest part of refrigerator. Do not use if liquid is frothy.
+  category: Seafood
+- name: Crab
+  fridge_duration: 7.days
+  freezer_duration: 2.months
+  comments: ''
+  category: Seafood
+- name: Shrimp
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Seafood
+- name: Lobster (shelled or not)
+  fridge_duration: 7.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Seafood
+- name: Fresh water fish, cleaned
+  fridge_duration: 5.days
+  freezer_duration: 9.months
+  comments: ''
+  category: Seafood
+- name: Cod fillet
+  fridge_duration: 3.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Seafood
+- name: Flounder fillet
+  fridge_duration: 3.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Seafood
+- name: Haddock fillet
+  fridge_duration: 3.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Seafood
+- name: Pollock (lean) fillet
+  fridge_duration: 3.days
+  freezer_duration: 6.months
+  comments: ''
+  category: Seafood
+- name: Mullet fillet
+  fridge_duration: 2.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Seafood
+- name: Ocean perch fillet
+  fridge_duration: 2.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Seafood
+- name: Sea perch fillet
+  fridge_duration: 2.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Seafood
+- name: Sea trout fillet
+  fridge_duration: 2.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Seafood
+- name: Striped bass (fatty) fillet
+  fridge_duration: 2.days
+  freezer_duration: 3.months
+  comments: ''
+  category: Seafood
+- name: Salmon steaks
+  fridge_duration: 5.days
+  freezer_duration: 2.months
+  comments: ''
+  category: Seafood
+- name: Cooked fish
+  fridge_duration: 4.days
+  freezer_duration: 1.month
+  comments: ''
+  category: Seafood
+- name: Smoked fish
+  fridge_duration: 2.weeks
+  freezer_duration: 5.weeks
+  comments: ''
+  category: Seafood
+- name: Asparagus
+  fridge_duration: 3.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Beans, green or wax; celery
+  fridge_duration: 1.week
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Beets, cabbage, carrots, turnips
+  fridge_duration: 2.weeks
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Broccoli, brussel sprouts
+  fridge_duration: 1.week
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Cauliflower
+  fridge_duration: 1.week
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Corn, in husk
+  fridge_duration: 2.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Corn, without husk
+  fridge_duration: 2.days
+  freezer_duration: Not recommended
+  comments: ''
+  category: Vegetables
+- name: Cucumbers
+  fridge_duration: 1.week
+  freezer_duration: ''
+  comments: ''
+  category: Vegetables
+- name: Lettuce, other salad greens
+  fridge_duration: 1.week
+  freezer_duration: Not recommended
+  comments: Store in bag or lettuce keeper.
+  category: Vegetables
+- name: Mushrooms
+  fridge_duration: 2.days
+  freezer_duration: 12.months
+  comments: Do not wash before refrigerator storage.
+  category: Vegetables
+- name: Okra
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Onions, green
+  fridge_duration: 5.days
+  freezer_duration: Not recommended
+  comments: ''
+  category: Vegetables
+- name: Onions, mature
+  fridge_duration: 2.weeks
+  freezer_duration: 6.months
+  comments: ''
+  category: Vegetables
+- name: Peas, lima beans, unshelled
+  fridge_duration: 5.days
+  freezer_duration: 12.months
+  comments: Store unshelled in refrigerator until used.
+  category: Vegetables
+- name: Peppers
+  fridge_duration: 1.week
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Radishes
+  fridge_duration: 2.weeks
+  freezer_duration: Not recommended
+  comments: ''
+  category: Vegetables
+- name: Tomatoes (fresh, ripe)
+  fridge_duration: 6.days
+  freezer_duration: 12.months
+  comments: ''
+  category: Vegetables
+- name: Tomatoes (canned, open)
+  fridge_duration: 4.days
+  freezer_duration: ''
+  comments: ''
+  category: Vegetables
+- name: Baby food
+  fridge_duration: 3.days
+  freezer_duration: See comments
+  comments: Store covered. Do not feed baby from jar. Reheat only enough for one feeding.
+    Freeze homemade baby food in ice cub trays, covered, use in 2-4 weeks.
+  category: Miscellaneous perishables
+- name: Soups
+  fridge_duration: stews
+  freezer_duration: 3.days
+  comments: 4-6 months
+  category: Miscellaneous perishables
+- name: Sandwiches
+  fridge_duration: 3.days
+  freezer_duration: 1.month
+  comments: ''
+  category: Miscellaneous perishables
+- name: Casseroles
+  fridge_duration: 2.days
+  freezer_duration: 1.month
+  comments: ''
+  category: Miscellaneous perishables
+- name: Ground spices
+  fridge_duration: 6.months
+  freezer_duration: 12.months
+  comments: Can be stored in cupboard.
+  category: Miscellaneous perishables
+- name: Candies
+  fridge_duration: 6.months
+  freezer_duration: 6.months
+  comments: Chocolates may discolor.
+  category: Miscellaneous perishables
+- name: Salad dressings, opened
+  fridge_duration: 6.months
+  freezer_duration: Not recommended
+  comments: ''
+  category: Miscellaneous perishables
