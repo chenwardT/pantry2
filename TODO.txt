@@ -2,7 +2,8 @@
 
 -Regularly check for ingredients that are nearing expiration.
 --Dynamic period of time to warn before expiration depending on how many ingredients are going bad.
---e.g. if you have 10 things going bad tomorrow, it's probably too late to cook them all, so warn earlier if more stuff.
+--e.g. if you have 10 things going bad tomorrow, it's probably too late to cook them all,
+  so warn earlier if more stuff.
 --Use email and flashes for this?
 ---Flashes should not go away unless clicked on.
 
@@ -21,7 +22,8 @@
 --Indices
 --Normalization
 
--How to manage displaying all times (including select tag options!) in user.timezone, but saving all as UTC?
+-How to manage displaying all times (including select tag options!) in user.timezone,
+ but saving all as UTC?
 
 -Re-think ingredient input.
 --Form should allow user to pick ingredient type (e.g. Beef) and how it's stored separately.
@@ -30,3 +32,6 @@
 
 -User's ingredients listing should have buttons for edit/delete per-ingredient
 --Also consider checkboxes for each entry, with a button to delete selected entries
+
+-For CRUD ops (ex. deleting an ingredient), ensure redirects go back to the page that the command
+ was issued from and not the logged in user's page.
