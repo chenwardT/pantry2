@@ -11,19 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141126055412) do
+ActiveRecord::Schema.define(version: 20141128065118) do
 
   create_table "expiration_dates", force: true do |t|
     t.string   "name"
-    t.boolean  "is_opened"
-    t.boolean  "is_cooked"
-    t.boolean  "in_fridge"
-    t.boolean  "in_freezer"
-    t.boolean  "in_pantry"
-    t.integer  "duration"
+    t.integer  "fridge_duration"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "freezer_duration"
+    t.string   "comments"
+    t.integer  "food_type_id"
   end
+
+  add_index "expiration_dates", ["food_type_id"], name: "index_expiration_dates_on_food_type_id"
+
+  create_table "food_types", force: true do |t|
+    t.string "name"
+  end
+
+  add_index "food_types", ["name"], name: "index_food_types_on_name"
 
   create_table "ingredients", force: true do |t|
     t.string   "name"
