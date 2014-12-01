@@ -30,7 +30,7 @@ class IngredientsController < ApplicationController
   private
 
     def ingredient_params
-      params.require(:ingredient).permit([:name, :expiration_date_id, :purchase_date])
+      params.require(:ingredient).permit([:name, :expiration_date_id, :purchase_date, :in_freezer])
     end
 
     def set_time_zone

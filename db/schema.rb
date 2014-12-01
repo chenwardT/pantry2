@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141128065118) do
+ActiveRecord::Schema.define(version: 20141201102306) do
 
   create_table "expiration_dates", force: true do |t|
     t.string   "name"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20141128065118) do
     t.datetime "purchase_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "in_freezer"
   end
 
   add_index "ingredients", ["created_at"], name: "index_ingredients_on_created_at"

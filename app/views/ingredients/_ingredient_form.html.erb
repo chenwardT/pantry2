@@ -1,16 +1,20 @@
 <%= form_for [@user, @ingredient] do |f| %>
-    <%= render 'shared/error_messages', object: f.object %>
-    <div class="field">
-      <%= f.label :ingredient_name %>
-      <%= f.text_field :name, placeholder: 'Enter a name for this ingredient (ex. leftover porkchops)' %>
-    </div>
-    <div class="field">
-      <%= f.label :ingredient_type %>
-      <%= f.select :expiration_date_id, [['Test 1', 1], ['Test 2', 2], ['Test 3', 3]]%>
-    </div>
-    <div class="field">
-      <%= f.label :purchase_date %>
-      <%= f.datetime_select :purchase_date, ampm: true, default: 0.days.from_now.in_time_zone(current_user.timezone) %>
-    </div>
-    <%= f.submit 'Add Ingredient', class: 'btn btn-primary' %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div class="field">
+    <%= f.label :ingredient_name %>
+    <%= f.text_field :name, placeholder: 'Enter a name for this ingredient (ex. leftover porkchops)' %>
+  </div>
+  <div class="field">
+    <%= f.label :ingredient_type %>
+    <%= f.collection_select :expiration_date_id, ExpirationDate.all, :id, :name %>
+  </div>
+  <div class="field">
+    <%= f.label :frozen? %>
+    <%= f.check_box :in_freezer, html_options = {class: 'checkbox'} %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_date %>
+    <%= f.datetime_select :purchase_date, ampm: true, default: 0.days.from_now.in_time_zone(current_user.timezone) %>
+  </div>
+  <%= f.submit 'Add Ingredient', class: 'btn btn-primary' %>
 <% end %>

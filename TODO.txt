@@ -23,7 +23,10 @@
 --Normalization
 
 -How to manage displaying all times (including select tag options!) in user.timezone,
- but saving all as UTC?
+ but saving all as UTC? (SOLVED)
+
+-Consider client-side solution to timezones
+--Low priority since foods usually don't move with people?
 
 -Re-think ingredient input.
 --Form should allow user to pick ingredient type (e.g. Beef) and how it's stored separately.
@@ -35,3 +38,15 @@
 
 -For CRUD ops (ex. deleting an ingredient), ensure redirects go back to the page that the command
  was issued from and not the logged in user's page.
+
+-Consider splitting expiration_date records by freezer and fridge durations, so there is a single
+ duration fields for each expiration_date.
+
+-Custom expiration_dates
+--User can name them e.g. "6 day timer", "grandma's special baclava" and associate it with a custom
+  duration.
+--These would be associated with users.
+--Perhaps also add fixed durations to the expiration_date table like "1 day", "2 days", etc.
+--This is another argument for separating expiration_date records by storage,
+  e.g. Frozen Baked Rolls with a duration of X days and Refridgerated Baked Rolls with a duration of
+  Y days.

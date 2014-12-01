@@ -8,11 +8,13 @@ class Ingredient < ActiveRecord::Base
   validate :purchase_date_cannot_be_in_the_future
 
   def expired?
-    Time.now > (purchase_date + expiration_date.duration.days)
+    self.in_freezer ? Time.now > (purchase_date + expiration_date.freezer_duration.seconds) :
+        Time.now > (purchase_date + expiration_date.fridge_duration.seconds)
   end
 
   def expires_on
-    purchase_date + expiration_date.duration.days
+    self.in_freezer ? purchase_date + expiration_date.freezer_duration.seconds :
+        purchase_date + expiration_date.fridge_duration.seconds
   end
 
   def expires_on_formatted
@@ -20,7 +22,8 @@ class Ingredient < ActiveRecord::Base
   end
 
   def time_until_expiration_in_words
-    distance_of_time_in_words(purchase_date, Time.now - expiration_date.duration.days)
+    self.in_freezer ? distance_of_time_in_words(purchase_date, Time.now - expiration_date.freezer_duration.days) :
+        distance_of_time_in_words(purchase_date, Time.now - expiration_date.fridge_duration.days)
   end
 
   protected
